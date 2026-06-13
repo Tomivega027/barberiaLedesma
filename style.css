@@ -1,0 +1,218 @@
+/* Reinicio básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header{
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    margin-bottom: 15px;
+    color: gold;
+}
+
+/* NAV */
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+/* SECCIONES */
+section{
+    padding: 60px 20px;
+}
+
+/* INICIO */
+#inicio{
+    text-align: center;
+}
+
+#inicio img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#inicio h2{
+    margin-top: 20px;
+    font-size: 2rem;
+    color: gold;
+}
+
+#inicio p{
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+#inicio a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: gold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+#inicio a:hover{
+    transform: scale(1.05);
+}
+
+/* SERVICIOS */
+#servicios{
+    text-align: center;
+}
+
+#servicios h2{
+    margin-bottom: 30px;
+    color: gold;
+}
+
+#servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#servicios h2{
+    width: 100%;
+}
+
+article{
+    background-color: #1f1f1f;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+article:hover{
+    transform: translateY(-5px);
+}
+
+article h3{
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* GALERÍA */
+#galeria{
+    text-align: center;
+}
+
+#galeria h2{
+    margin-bottom: 30px;
+    color: gold;
+}
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.slide{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* CONTACTO */
+#contacto{
+    text-align: center;
+}
+
+#contacto h2{
+    margin-bottom: 20px;
+    color: gold;
+}
+
+#contacto p{
+    margin: 10px 0;
+}
+
+#contacto a{
+    display: inline-block;
+    margin: 15px 0;
+    padding: 12px 20px;
+    background-color: gold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #1f1f1f;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+
+footer section{
+    padding: 0;
+}
+
+footer h3{
+    color: gold;
+    margin-bottom: 10px;
+}
+
+footer p{
+    margin: 5px 0;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .slide{
+        width: 90%;
+        height: auto;
+    }
+}
